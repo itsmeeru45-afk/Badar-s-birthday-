@@ -1,1 +1,64 @@
 
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  max-width: 400px;
+  width: 90%;
+}
+
+.title {
+  color: #ffeb3b;
+  margin-bottom: 15px;
+}
+
+.message {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+button {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+  background-color: #e91e63;
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+#surprise {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
